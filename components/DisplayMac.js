@@ -1,22 +1,22 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react'
 
 const DisplayMac = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const vidRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false)
+  const vidRef = useRef(null)
   const handlePlayVideo = async () => {
     if (isPlaying) {
-      vidRef.current.pause();
+      vidRef.current.pause()
     } else {
-      vidRef.current.play();
+      vidRef.current.play()
     }
-    setIsPlaying(!isPlaying);
-  };
+    setIsPlaying(!isPlaying)
+  }
   return (
-    <div className="relative w-[900px] h-[500px] bg-transparent border border-gray-800 rounded-lg overflow-hidden my-0 mx-auto">
+    <div className="relative w-[900px] h-[500px]  bg-transparent border border-gray-800 rounded-lg overflow-hidden my-0 mb-[8rem] mx-auto">
       <div>
         <div className="border-b border-gray-800 py-2 bg-[#FFFFFF15]">
           <div className="absolute top-3 left-2 flex space-x-1">
-            <div className="w-[10px] h-[10px] bg-[#FF5E58] rounded-full"></div>
+            <div className="w-[10px] h-[10px] bg-[#ff5e58] rounded-full"></div>
             <div className="w-[10px] h-[10px] bg-[#FFBB2E] rounded-full"></div>
             <div className="w-[10px] h-[10px] bg-[#22B33A] rounded-full"></div>
           </div>
@@ -37,7 +37,7 @@ const DisplayMac = () => {
         ></video>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DisplayMac;
+export default DisplayMac

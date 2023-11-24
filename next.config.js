@@ -3,7 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["epicreact.dev"],
+    domains: [
+      "epicreact.dev",
+      "images.pexels.com",
+      "www.macmillandictionary.com",
+    ],
   },
 };
 
